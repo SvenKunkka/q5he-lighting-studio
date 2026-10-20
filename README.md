@@ -1,3 +1,7 @@
+<!-- SVENKUNKKA-README-NAV:BEGIN -->
+[中文项目说明](#project-overview-zh) · [English overview](#project-overview-en) · [维护者 X / Maintainer on X](https://x.com/Svenu1s5)
+<!-- SVENKUNKKA-README-NAV:END -->
+
 # Q5 HE RGB Studio
 
 Q5 HE RGB Studio is a WebHID-based lighting console for the Keychron Q5 HE. It controls 101 per-key RGB LEDs over USB while preserving the full 102-control physical layout, including the top-right encoder.
@@ -91,3 +95,30 @@ See [firmware/README.md](firmware/README.md) for the QMK keymap and raw HID impl
 - Per-key buffer length is 101 RGB entries.
 - Pressing `NumpadEnter` maps to the final RGB LED slot, not an off-by-one shifted index.
 - Snake, keystroke, mic, screen, image, and per-key effects all use `RGB_KEY_LAYOUT`.
+
+
+---
+
+<!-- SVENKUNKKA-PROJECT-INFO:BEGIN -->
+
+<a id="project-overview-zh"></a>
+## 中文项目说明
+
+面向 Keychron Q5 HE ANSI 旋钮版本的 WebHID 灯光控制台，提供逐键配色、图像映射、屏幕与麦克风效果、按键响应及 AI 状态灯效，并区分 102 个实体控件与 101 个 RGB 灯位。
+
+**使用入口：** 运行 `npm install`、`npm run dev`，使用 Chrome 或 Edge；匹配的 QMK 协议和键盘侧实现见 [固件说明](firmware/README.md)。
+
+**范围说明：** 针对指定型号与协议，不能据此推定其他键盘兼容；Codex 状态需经本地状态文件桥接，不会自动连接。
+
+<a id="project-overview-en"></a>
+## English project overview
+
+A WebHID lighting console for the Keychron Q5 HE ANSI encoder variant, with per-key painting, image mapping, screen and microphone effects, key reactions and AI status lighting. It distinguishes 102 physical controls from 101 RGB slots.
+
+**Getting started:** Run `npm install` and `npm run dev` in Chrome or Edge. See the [firmware guide](firmware/README.md) for the matching QMK protocol and keyboard implementation.
+
+**Scope:** Targets the specified model and protocol, not arbitrary keyboards. Codex state requires the local status-file bridge and is not connected automatically.
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-PROJECT-INFO:END -->
